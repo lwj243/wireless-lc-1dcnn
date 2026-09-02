@@ -10,7 +10,6 @@ Do not disclose suspected vulnerabilities in a public issue. Report them private
 
 ## Safe use
 
-- Keep the GitHub repository private unless its contents have been approved for public release.
 - Never commit `.env` files, access tokens, raw participant data, unpublished documents, or private COMSOL projects.
 - Do not load third-party PyTorch checkpoints with unrestricted pickle deserialization.
 - This project loads checkpoints with `torch.load(..., weights_only=True)` and validates expected keys and tensor shapes.
