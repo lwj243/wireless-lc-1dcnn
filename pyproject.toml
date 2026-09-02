@@ -13,8 +13,8 @@ dependencies = [
   "matplotlib>=3.7,<4",
   "numpy>=1.26,<3",
   "pandas>=2,<3",
-  "pillow>=10,<13",
-  "torch>=2.5,<3",
+  "pillow>=12.3,<13",
+  "torch>=2.13,<3",
 ]
 
 [project.optional-dependencies]
@@ -49,4 +49,3 @@ ignore = ["S101"]
 
 [tool.bandit]
 exclude_dirs = ["tests"]
-
