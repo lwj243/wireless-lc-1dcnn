@@ -1,0 +1,52 @@
+{
+  "data_source": "Measured-self-discharge-gated COMSOL transport plus FE-informed virtual wireless LC spectra; not experimental wireless measurements",
+  "full_frequency_sweep_mhz": [
+    11.5,
+    15.5
+  ],
+  "circuit_points_before_sampling": 1001,
+  "network_frequency_points": 64,
+  "input_channels": [
+    "Re(Zin)",
+    "Im(Zin)",
+    "log10|Zin|",
+    "phase(Zin)",
+    "S11_dB",
+    "delta_Re(Zin)",
+    "delta_Im(Zin)",
+    "delta_phase(Zin)",
+    "delta_S11_dB"
+  ],
+  "samples": 3750,
+  "virtual_devices": 150,
+  "split_counts": {
+    "train": 1800,
+    "ood": 750,
+    "validation": 600,
+    "test": 600
+  },
+  "class_counts": {
+    "active release": {
+      "ood": 360,
+      "test": 288,
+      "train": 864,
+      "validation": 288
+    },
+    "early": {
+      "ood": 120,
+      "test": 96,
+      "train": 288,
+      "validation": 96
+    },
+    "post-release diffusion": {
+      "ood": 270,
+      "test": 216,
+      "train": 648,
+      "validation": 216
+    }
+  },
+  "split_rule": "grouped by virtual device; no device appears in more than one split",
+  "id_scope": "calibration-controlled sensor-transfer envelope plus tissue, coupling, and measurement variation",
+  "ood_scope": "wider tissue, component, coupling, calibration, kinetic, and measurement ranges",
+  "state_definition": "early: t<20 min; active release: t>=20 min while V>=0.8 V; post-release diffusion: after V<0.8 V"
+}

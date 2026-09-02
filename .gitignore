@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.ruff_cache/
+.audit-cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Virtual environments and local configuration
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+*.local
+
+# Credentials and signing material
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+secrets*.json
+
+# IDE and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Build products
+build/
+dist/
+*.egg-info/
+
+# Generated training outputs (curated release artifacts are under artifacts/)
+outputs/
+runs/
+checkpoints/
+
+# Raw or unpublished research inputs
+raw_data/
+private_data/
+*.mph
+*.mphbin

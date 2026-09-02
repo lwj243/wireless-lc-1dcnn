@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite this repository."
+title: "Wireless-LC 1D-CNN"
+type: software
+authors:
+  - family-names: Lu
+    given-names: Wenjie
+version: 1.0.0
+date-released: 2026-09-02
+repository-code: "https://github.com/lwj243/wireless-lc-1dcnn"
+abstract: "A lightweight multi-task 1D-CNN for decoding COMSOL-FE-informed synthetic wireless LC spectra."
